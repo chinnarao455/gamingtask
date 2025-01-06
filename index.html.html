@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game with Meme Meter and High Score</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: white;
+        }
+
+        #game-container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 20px auto;
+            border: 3px solid #fff;
+            background-color: #111;
+        }
+
+        #ui {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 20px;
+            background: #444;
+            width: 100% ;
+        }
+
+        #ui p {
+            margin: 0;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="ui">
+        <p>High Score: <span id="high-score">0</span></p>
+        <p>Score: <span id="score">0</span></p>
+        <p>Meme Meter: <span id="meme-meter">0.00</span></p>
+    </div>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+    </div>
+    <script src="./gaming.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+</body>
+</html>
